@@ -1,0 +1,24 @@
+{
+  "name": "bienesraicesmvc",
+  "version": "1.0.0",
+  "description": "Bienes Raices con MVC y Nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EduardoCervantes2706/BienesRaicesMVC.git"
+  },
+  "keywords": [
+    "MVC",
+    "NodeJS",
+    "DB"
+  ],
+  "author": "Luis Eduardo Cervantes Jaramillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EduardoCervantes2706/BienesRaicesMVC/issues"
+  },
+  "homepage": "https://github.com/EduardoCervantes2706/BienesRaicesMVC#readme"
+}
