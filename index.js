@@ -1,4 +1,5 @@
 import express from "express"
+import routes from "./routes/usuarioRoutes.js"
 
 // Creando App
 const app = express()
@@ -9,6 +10,4 @@ app.listen(port, () => {
 })
 
 // Routing
-app.get("/", (req, res) => {
-    res.send("Hola Mundo desde NodeJS")
-})
+app.use("/", routes)
