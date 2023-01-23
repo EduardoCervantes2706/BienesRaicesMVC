@@ -9,5 +9,9 @@ app.listen(port, () => {
     console.log("Servidor corriendo en el puerto 3000")
 })
 
+// Habilitando Pug
+app.set('view engine', 'pug')
+app.set('views', './views')
+
 // Routing
-app.use("/", routes)
+app.use("/auth", routes)
