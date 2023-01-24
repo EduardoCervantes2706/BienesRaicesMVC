@@ -13,5 +13,8 @@ app.listen(port, () => {
 app.set('view engine', 'pug')
 app.set('views', './views')
 
+// Carpeta publica
+app.use(express.static('public'))
+
 // Routing
 app.use("/auth", routes)
