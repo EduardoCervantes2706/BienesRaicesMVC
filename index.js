@@ -1,4 +1,5 @@
 import express from "express"
+import db from "./config/db.js"
 import routes from "./routes/usuarioRoutes.js"
 
 // Creando App
@@ -8,6 +9,14 @@ const port = 3000
 app.listen(port, () => {
     console.log("Servidor corriendo en el puerto 3000")
 })
+
+// Conexion a la base de datos
+try {
+    await db.authenticate()
+    console.log("Conexion correcta a la base de datos")
+} catch (error) {
+    console.log(error)
+}
 
 // Habilitando Pug
 app.set('view engine', 'pug')
