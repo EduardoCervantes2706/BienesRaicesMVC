@@ -11,7 +11,7 @@ const formularioRegistro = (req, res) => {
 const formularioOlvidePassword = (req, res) => {
     res.render('auth/olvide-password', {
         pagina: "Recuperar Password"
-    }) 
+    })
 }
 
 export {
