@@ -10,6 +10,9 @@ app.listen(port, () => {
     console.log("Servidor corriendo en el puerto 3000")
 })
 
+// Habilitar lectura de datos de formularios
+app.use(express.urlencoded({extended: true}))
+
 // Conexion a la base de datos
 try {
     await db.authenticate()
