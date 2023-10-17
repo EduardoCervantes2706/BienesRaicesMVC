@@ -1,0 +1,19 @@
+extends ../layouts/index
+
+block contenido 
+    div 
+        h1(class="text-center text-5xl font-extrabold my-12") Bienes
+            span(class="font-normal") Raíces
+        h2(class="text-center font-bold text-2xl")= title
+        div(class="bg-white px-4 py-6 mx-auto max-w-md shadow-md rounded-md mt-8") 
+            form(class="space-y-4")
+                div 
+                    label(class="text-sm uppercase block text-gray-500 font-bold" for="email") E-mail
+                    input(class="w-full border border-gray-400 p-2 rounded-md mt-1 placeholder:text-gray-500" id="email" type="email" placeholder="Escribe tu Correo Electrónico...")
+                div 
+                    label(class="text-sm uppercase block text-gray-500 font-bold" for="password") Password
+                    input(class="w-full border border-gray-400 p-2 rounded-md mt-1 placeholder:text-gray-500" id="password" type="password" placeholder="Escribe tu Password...")
+                div(class="flex justify-between items-center text-xs text-gray-500")
+                    a(href="/auth/registro" class="hover:text-gray-700") ¿Aún no tienes cuenta? Crea Una 
+                    a(href="/auth/olvide-password" class="hover:text-gray-700") Olvidé mi Password
+                input(class="w-full bg-indigo-600 text-white cursor-pointer p-2 rounded-md hover:bg-indigo-700 transition-all font-bold" type="submit" value="Iniciar Sesión")
